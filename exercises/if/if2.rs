@@ -5,14 +5,18 @@
 //
 // Execute `rustlings hint if2` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
+
 
 pub fn foo_if_fizz(fizzish: &str) -> &str {
+    let mut str="foo";
     if fizzish == "fizz" {
-        "foo"
-    } else {
-        1
+        str="foo";
+    } else if fizzish=="fuzz"{
+        str="bar";
+    } else if fizzish=="literally anything" {
+        str="baz";
     }
+    return str;
 }
 
 // No test changes needed!
